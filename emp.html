@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RegistrationForm</title>
+	<link rel="stylesheet" type="text/css" href="emp.css">
+	<script type="text/javascript" src="emp.js" ></script>
+</head>
+<body onload="load()">
+<header>Employee form
+</header>
+<section id="sec1">
+	<form id="form">
+	<table id="table1">
+		<tr>
+			<th><span style="color:red;" >*</span>Name:</th>
+			<td><input id="name" type="text" value="" onblur="name1()" minlength="9" maxlength="30" required="required" ></input></td>
+			<th><span style="color:red;" >*</span>Address:</th>
+			<td rowspan="2"><textarea id="address" onblur="address1()" style="vertical-align:center;"  required="required" > </textarea> </td>
+		</tr>
+		<tr>
+			<th><span style="color:red;" >*</span>Email id:</th>
+			<td><input id="email" type="email" value="" onblur="email1()" required ></input> </td>
+		</tr>
+		<tr><tr></tr>
+			<th><span style="color:red;" >*</span>Gender:</th>
+			<td> <input id="male" name="gen" type="radio" value="Male" checked="checked">Male</input> <input id="female"  name="gen" type="radio" value="female">Female</input> </td>
+			<th><span style="color:red;" >*</span>Ph no :</th>
+			<td><input id="phone" type="tel" onblur="phone1()" minlength="10" maxlength="10" required="required" ></input> </td>
+		</tr>
+		<tr>
+			<th><span style="color:red;" >*</span>Date of Birth:</th>
+			<td><input id="dob" type="date" onblur="date1()" value="" required="required" ></input> </td>
+			<th><span style="color:red;" >*</span>Languages Known:</th>
+			<td rowspan="2">
+				<input id="eng" type="checkbox" onblur="validateForm()" >English</input>
+				<input id="hin" type="checkbox" onblur="validateForm()" >Hindi</input><br>
+				<input id="mar" type="checkbox" onblur="validateForm()" >Marati</input>
+				<input id="tam" type="checkbox" onblur="validateForm()" >Tamil</input><br>
+			</td>
+		</tr>
+		<tr></tr>
+		<tr><td></td>
+		<th><input id="save" type="button" onclick="show()"  style="border-radius:5px;border-color: #024457; background-color:#02627d; color:white;margin-left:63px;"  value="Save" disabled="disabled" ></input></th>
+		<th><input id="update" type="button" onclick="update1()"  style="border-radius:5px;border-color: #024457; background-color:#02627d; color:white; visibility:hidden;margin-right:105px;"  value="Update" ></input></th>
+		<th ><input id="Reset" type="reset" style="border-radius:5px;border-color: #024457; background-color:#02627d; color:white;margin-right:124px;"  value="Reset"></input></th>
+		</tr>
+	</table></form>
+</section>
+</body>
+</html>
